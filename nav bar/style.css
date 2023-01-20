@@ -69,3 +69,25 @@ li{
 .services:hover .dropdown{
     display: block;
 }
+
+/*  RESPONSIVE NAVBAR MENU */
+input[type="checkbox"]{
+    display: none;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media(max-width: 750px){
+    .menu{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+
+    input[type="checkbox"]:checked ~ .menu{
+        display: block;
+    }
+}
